@@ -1,0 +1,100 @@
+{
+  // =====================================================
+  // Formatting (Prettier + ESLint discipline)
+  // =====================================================
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.formatOnPaste": false,
+  "editor.formatOnType": false,
+
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "explicit"
+  },
+
+  // =====================================================
+  // Editor Core (Readability & Focus)
+  // =====================================================
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "off",
+  "editor.rulers": [100],
+
+  "editor.minimap.enabled": false,
+  "editor.renderWhitespace": "boundary",
+  "editor.scrollBeyondLastLine": false,
+  "editor.smoothScrolling": true,
+  "editor.bracketPairColorization.enabled": true,
+
+  // Reduce visual noise
+  "editor.lightbulb.enabled": "off",
+  "breadcrumbs.enabled": false,
+
+  // =====================================================
+  // TypeScript / NestJS Intelligence
+  // =====================================================
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.suggest.completeFunctionCalls": true,
+
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "javascript.preferences.quoteStyle": "single",
+
+  // Faster TS server for large NestJS projects
+  "typescript.tsserver.log": "off",
+
+  // =====================================================
+  // IntelliSense (Less guessing, more intent)
+  // =====================================================
+  "editor.suggestSelection": "first",
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.snippetSuggestions": "top",
+
+  // =====================================================
+  // ESLint (Correctness over formatting)
+  // =====================================================
+  "eslint.validate": ["typescript", "javascript"],
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": false,
+
+  // =====================================================
+  // Files & Search (Backend-friendly)
+  // =====================================================
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.autoSave": "off",
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/coverage": true
+  },
+
+  // =====================================================
+  // Explorer (Speed)
+  // =====================================================
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+
+  // =====================================================
+  // Git (Safe automation)
+  // =====================================================
+  "git.enableSmartCommit": true,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+
+  // =====================================================
+  // Debugging & Terminal (NestJS lifecycle friendly)
+  // =====================================================
+  "debug.inlineValues": true,
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+
+  // =====================================================
+  // Problems & Diagnostics
+  // =====================================================
+  "editor.showUnused": true,
+  "problems.decorations.enabled": true
+}
